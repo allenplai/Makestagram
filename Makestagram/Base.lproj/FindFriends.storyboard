@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e7g-VJ-A69">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find Friends-->
+        <scene sceneID="29C-pa-TT6">
+            <objects>
+                <viewController id="v8o-nO-Yck" customClass="FindFriendsViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bWK-tc-7rm"/>
+                        <viewControllerLayoutGuide type="bottom" id="OcL-59-kdR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MHb-dI-MRf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iGs-B1-nZY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FindFriendsCell" rowHeight="71" id="Vnj-pr-sNO" customClass="FindFriendsCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vnj-pr-sNO" id="iGi-WG-UNS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5q-2V-ZId">
+                                                    <rect key="frame" x="23" y="8" width="207" height="54.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-6F-Fhn">
+                                                    <rect key="frame" x="242" y="18" width="115" height="34.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="115" id="jrt-AS-25Y"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="followButtonTapped:" destination="Vnj-pr-sNO" eventType="touchUpInside" id="Bkk-5b-M7G"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2Hv-6F-Fhn" secondAttribute="bottom" constant="10" id="OVY-6o-MH4"/>
+                                                <constraint firstItem="2Hv-6F-Fhn" firstAttribute="top" secondItem="iGi-WG-UNS" secondAttribute="topMargin" constant="10" id="QvE-v5-kFO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="G5q-2V-ZId" secondAttribute="bottom" id="SjD-yn-lmF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="2Hv-6F-Fhn" secondAttribute="trailing" constant="10" id="ZAJ-hK-Ll0"/>
+                                                <constraint firstItem="2Hv-6F-Fhn" firstAttribute="leading" secondItem="G5q-2V-ZId" secondAttribute="trailing" constant="12" id="cB5-nR-4vX"/>
+                                                <constraint firstItem="G5q-2V-ZId" firstAttribute="leading" secondItem="iGi-WG-UNS" secondAttribute="leadingMargin" constant="15" id="emF-za-QTo"/>
+                                                <constraint firstItem="G5q-2V-ZId" firstAttribute="top" secondItem="iGi-WG-UNS" secondAttribute="topMargin" id="qRz-tb-9tL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="followButton" destination="2Hv-6F-Fhn" id="z6L-ut-EOQ"/>
+                                            <outlet property="usernameLabel" destination="G5q-2V-ZId" id="779-cd-Zup"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="v8o-nO-Yck" id="T4K-Z9-Fvf"/>
+                                    <outlet property="delegate" destination="v8o-nO-Yck" id="hb1-Qs-5zJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iGs-B1-nZY" firstAttribute="top" secondItem="MHb-dI-MRf" secondAttribute="top" id="6kQ-c9-r2g"/>
+                            <constraint firstAttribute="trailing" secondItem="iGs-B1-nZY" secondAttribute="trailing" id="8EJ-2Z-HCg"/>
+                            <constraint firstItem="iGs-B1-nZY" firstAttribute="leading" secondItem="MHb-dI-MRf" secondAttribute="leading" id="FMb-LJ-dHs"/>
+                            <constraint firstAttribute="bottom" secondItem="iGs-B1-nZY" secondAttribute="bottom" id="QPx-aN-PpO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find Friends" id="gGK-pR-Cdy"/>
+                    <connections>
+                        <outlet property="tableView" destination="iGs-B1-nZY" id="mt3-6K-cSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luL-Zh-bmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544.79999999999995" y="770.46476761619192"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UyC-g4-ybT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e7g-VJ-A69" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="tab_find_friends_black" id="s3q-Hb-pAx">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t6d-rx-OXV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v8o-nO-Yck" kind="relationship" relationship="rootViewController" id="PfB-yz-MPz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ri6-A5-xCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394.39999999999998" y="770.46476761619192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_find_friends_black" width="25" height="25"/>
+    </resources>
+</document>
