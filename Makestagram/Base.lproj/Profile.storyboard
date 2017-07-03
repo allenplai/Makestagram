@@ -170,16 +170,16 @@
             </objects>
             <point key="canvasLocation" x="592.79999999999995" y="877.51124437781118"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="CMv-R3-US8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fyt-el-7oE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tab_profile_black" id="ovB-1M-F09">
+                    <tabBarItem key="tabBarItem" title="" image="tab_profile_black" id="ovB-1M-F09">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ga5-Uf-q3u">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ga5-Uf-q3u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

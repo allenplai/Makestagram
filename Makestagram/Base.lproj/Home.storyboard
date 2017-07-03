@@ -161,7 +161,13 @@
                             <constraint firstItem="1co-X0-VHc" firstAttribute="top" secondItem="VSG-2r-yDQ" secondAttribute="top" id="cGj-NS-S7c"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Makestagram" id="CwR-Hq-XO3"/>
+                    <navigationItem key="navigationItem" title="Makestagram" id="CwR-Hq-XO3">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="7i5-7d-CJQ">
+                            <connections>
+                                <segue destination="ZUy-LF-Q4R" kind="presentation" id="cmT-hx-kqj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="1co-X0-VHc" id="3nw-KD-gaX"/>
                     </connections>
@@ -179,7 +185,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xwZ-Ew-otj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xwZ-Ew-otj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -191,6 +197,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nj4-ng-trU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2143.1999999999998" y="808.24587706146929"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="iJ2-cY-a1E">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="ZUy-LF-Q4R" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aK9-6g-fIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1330.4000000000001" y="1504.4977511244379"/>
         </scene>
     </scenes>
     <resources>

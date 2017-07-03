@@ -62,9 +62,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Uses the camera to take pictures</string>
+	<string>$(PRODUCT_NAME) - Uses the camera to take pictures</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Share photos with friends</string>
+	<string>$(PRODUCT_NAME) - Share photos with friends</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

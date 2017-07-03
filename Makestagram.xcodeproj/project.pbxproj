@@ -11,6 +11,7 @@
 		C95847C61F0898B9005838DF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95847C41F0898B9005838DF /* Profile.storyboard */; };
 		C95847CA1F0899CF005838DF /* PostThumbImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95847C91F0899CF005838DF /* PostThumbImageCell.swift */; };
 		C95847CC1F089B37005838DF /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95847CB1F089B37005838DF /* ProfileHeaderView.swift */; };
+		C95A8ED71F097E91002E772C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A8ED61F097E91002E772C /* Chat.swift */; };
 		C9648C3E1EEA5209006D6FC1 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9648C3D1EEA5209006D6FC1 /* PostImageCell.swift */; };
 		C9648C411EEA54D2006D6FC1 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9648C401EEA54D2006D6FC1 /* PostHeaderCell.swift */; };
 		C9648C431EEA577F006D6FC1 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9648C421EEA577F006D6FC1 /* PostActionCell.swift */; };
@@ -41,6 +42,10 @@
 		C97ECC811EEA0D1200F83A40 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ECC801EEA0D1200F83A40 /* UIImage+Size.swift */; };
 		C97ECC831EEA4BD000F83A40 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ECC821EEA4BD000F83A40 /* StorageReference+Post.swift */; };
 		C97ECC861EEA4FA100F83A40 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97ECC841EEA4FA100F83A40 /* Home.storyboard */; };
+		C9B8A9D81F097F3C0071781E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8A9D71F097F3C0071781E /* Message.swift */; };
+		C9B8A9DA1F097FFD0071781E /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8A9D91F097FFD0071781E /* ChatService.swift */; };
+		C9B8A9DD1F09831F0071781E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B8A9DB1F09831F0071781E /* Chat.storyboard */; };
+		C9B8A9E11F0987170071781E /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8A9E01F0987170071781E /* ChatListViewController.swift */; };
 		C9CE4BBB1EEAEB0300E0ECE7 /* DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE4BBA1EEAEB0300E0ECE7 /* DatabaseReference+Location.swift */; };
 		C9CE4BBD1EEAED4C00E0ECE7 /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE4BBC1EEAED4C00E0ECE7 /* UITableView+Utility.swift */; };
 		C9CE4BBF1EEAEE2F00E0ECE7 /* MGPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE4BBE1EEAEE2F00E0ECE7 /* MGPaginationHelper.swift */; };
@@ -54,6 +59,10 @@
 		C9D9384A1EEAF4E000E7B380 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9D938401EEAF4E000E7B380 /* OpenSans-Regular.ttf */; };
 		C9D9384B1EEAF4E000E7B380 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9D938411EEAF4E000E7B380 /* OpenSans-Semibold.ttf */; };
 		C9D9384C1EEAF4E000E7B380 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9D938421EEAF4E000E7B380 /* OpenSans-SemiboldItalic.ttf */; };
+		C9EE43D21F09895E00B1F268 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE43D11F09895E00B1F268 /* ChatListCell.swift */; };
+		C9EE43D41F098A2300B1F268 /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE43D31F098A2300B1F268 /* NewChatViewController.swift */; };
+		C9EE43D61F098B2600B1F268 /* NewChatUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE43D51F098B2600B1F268 /* NewChatUserCell.swift */; };
+		C9EE43D81F098C8000B1F268 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE43D71F098C8000B1F268 /* ChatViewController.swift */; };
 		C9F1E6341EEA6062004B45BF /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1E6331EEA6062004B45BF /* FindFriendsCell.swift */; };
 		E3BE983324EEC5F90C247286 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C05B09F4038CFC92676782 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +74,7 @@
 		C95847C51F0898B9005838DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		C95847C91F0899CF005838DF /* PostThumbImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostThumbImageCell.swift; sourceTree = "<group>"; };
 		C95847CB1F089B37005838DF /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		C95A8ED61F097E91002E772C /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		C9648C3D1EEA5209006D6FC1 /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		C9648C401EEA54D2006D6FC1 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
 		C9648C421EEA577F006D6FC1 /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
@@ -97,6 +107,10 @@
 		C97ECC801EEA0D1200F83A40 /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Size.swift"; path = "Extensions/UIImage+Size.swift"; sourceTree = "<group>"; };
 		C97ECC821EEA4BD000F83A40 /* StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		C97ECC851EEA4FA100F83A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		C9B8A9D71F097F3C0071781E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C9B8A9D91F097FFD0071781E /* ChatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		C9B8A9DC1F09831F0071781E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chat.storyboard; sourceTree = "<group>"; };
+		C9B8A9E01F0987170071781E /* ChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		C9CE4BBA1EEAEB0300E0ECE7 /* DatabaseReference+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseReference+Location.swift"; sourceTree = "<group>"; };
 		C9CE4BBC1EEAED4C00E0ECE7 /* UITableView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
 		C9CE4BBE1EEAEE2F00E0ECE7 /* MGPaginationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPaginationHelper.swift; sourceTree = "<group>"; };
@@ -110,6 +124,10 @@
 		C9D938401EEAF4E000E7B380 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		C9D938411EEAF4E000E7B380 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		C9D938421EEAF4E000E7B380 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		C9EE43D11F09895E00B1F268 /* ChatListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		C9EE43D31F098A2300B1F268 /* NewChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
+		C9EE43D51F098B2600B1F268 /* NewChatUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewChatUserCell.swift; sourceTree = "<group>"; };
+		C9EE43D71F098C8000B1F268 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C9F1E6331EEA6062004B45BF /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindFriendsCell.swift; path = Views/FindFriendsCell.swift; sourceTree = "<group>"; };
 		E098B16859B0FAADBE663A71 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +166,8 @@
 			children = (
 				C95847C91F0899CF005838DF /* PostThumbImageCell.swift */,
 				C95847CB1F089B37005838DF /* ProfileHeaderView.swift */,
+				C9EE43D51F098B2600B1F268 /* NewChatUserCell.swift */,
+				C9EE43D11F09895E00B1F268 /* ChatListCell.swift */,
 				C9648C3D1EEA5209006D6FC1 /* PostImageCell.swift */,
 				C9F1E6331EEA6062004B45BF /* FindFriendsCell.swift */,
 				C9648C401EEA54D2006D6FC1 /* PostHeaderCell.swift */,
@@ -207,9 +227,10 @@
 			isa = PBXGroup;
 			children = (
 				C967A23E1EE9BB2C0028D7B3 /* Main.storyboard */,
+				C97ECC841EEA4FA100F83A40 /* Home.storyboard */,
+				C9B8A9DB1F09831F0071781E /* Chat.storyboard */,
 				C95847C41F0898B9005838DF /* Profile.storyboard */,
 				C9648C481EEA5F74006D6FC1 /* FindFriends.storyboard */,
-				C97ECC841EEA4FA100F83A40 /* Home.storyboard */,
 				C967A2561EE9C2050028D7B3 /* Login.storyboard */,
 			);
 			name = Storyboards;
@@ -221,6 +242,9 @@
 				C967A25F1EE9C94D0028D7B3 /* CreateUsernameViewController.swift */,
 				C97ECC731EEA07D400F83A40 /* MainTabBarController.swift */,
 				C95847C21F0897FE005838DF /* ProfileViewController.swift */,
+				C9EE43D31F098A2300B1F268 /* NewChatViewController.swift */,
+				C9EE43D71F098C8000B1F268 /* ChatViewController.swift */,
+				C9B8A9E01F0987170071781E /* ChatListViewController.swift */,
 				C97ECC711EEA066800F83A40 /* FindFriendsViewController.swift */,
 				C97ECC6D1EEA063100F83A40 /* HomeViewController.swift */,
 				C967A2591EE9C3920028D7B3 /* LoginViewController.swift */,
@@ -233,6 +257,8 @@
 			children = (
 				C967A25D1EE9C7930028D7B3 /* User.swift */,
 				C97ECC7E1EEA0C6D00F83A40 /* Post.swift */,
+				C95A8ED61F097E91002E772C /* Chat.swift */,
+				C9B8A9D71F097F3C0071781E /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -241,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				C967A2621EE9CA350028D7B3 /* UserService.swift */,
+				C9B8A9D91F097FFD0071781E /* ChatService.swift */,
 				C9648C441EEA5AFE006D6FC1 /* LikeService.swift */,
 				C97ECC7A1EEA0A8400F83A40 /* StorageService.swift */,
 				C97ECC7C1EEA0B6600F83A40 /* PostService.swift */,
@@ -365,6 +392,7 @@
 				C97ECC861EEA4FA100F83A40 /* Home.storyboard in Resources */,
 				C9D938441EEAF4E000E7B380 /* OpenSans-BoldItalic.ttf in Resources */,
 				C967A2401EE9BB2C0028D7B3 /* Main.storyboard in Resources */,
+				C9B8A9DD1F09831F0071781E /* Chat.storyboard in Resources */,
 				C9D9384A1EEAF4E000E7B380 /* OpenSans-Regular.ttf in Resources */,
 				C967A2571EE9C2050028D7B3 /* Login.storyboard in Resources */,
 				C9D938471EEAF4E000E7B380 /* OpenSans-Italic.ttf in Resources */,
@@ -438,12 +466,17 @@
 				C95847CC1F089B37005838DF /* ProfileHeaderView.swift in Sources */,
 				C97ECC6B1EEA03D300F83A40 /* Storyboard+Utility.swift in Sources */,
 				C9648C431EEA577F006D6FC1 /* PostActionCell.swift in Sources */,
+				C9EE43D21F09895E00B1F268 /* ChatListCell.swift in Sources */,
 				C9648C451EEA5AFE006D6FC1 /* LikeService.swift in Sources */,
 				C97ECC7F1EEA0C6D00F83A40 /* Post.swift in Sources */,
+				C9B8A9E11F0987170071781E /* ChatListViewController.swift in Sources */,
 				C9648C3E1EEA5209006D6FC1 /* PostImageCell.swift in Sources */,
+				C9B8A9D81F097F3C0071781E /* Message.swift in Sources */,
 				C9CE4BBF1EEAEE2F00E0ECE7 /* MGPaginationHelper.swift in Sources */,
+				C9EE43D61F098B2600B1F268 /* NewChatUserCell.swift in Sources */,
 				C9F1E6341EEA6062004B45BF /* FindFriendsCell.swift in Sources */,
 				C95847CA1F0899CF005838DF /* PostThumbImageCell.swift in Sources */,
+				C9EE43D41F098A2300B1F268 /* NewChatViewController.swift in Sources */,
 				C97ECC811EEA0D1200F83A40 /* UIImage+Size.swift in Sources */,
 				C96DA7501EEAF70E002E8DB0 /* UIFont+Utility.swift in Sources */,
 				C97ECC791EEA090D00F83A40 /* MGPhotoHelper.swift in Sources */,
@@ -453,11 +486,14 @@
 				C97ECC721EEA066800F83A40 /* FindFriendsViewController.swift in Sources */,
 				C9CE4BBB1EEAEB0300E0ECE7 /* DatabaseReference+Location.swift in Sources */,
 				C97ECC831EEA4BD000F83A40 /* StorageReference+Post.swift in Sources */,
+				C9EE43D81F098C8000B1F268 /* ChatViewController.swift in Sources */,
 				C97ECC691EEA037400F83A40 /* Constants.swift in Sources */,
 				C97ECC7D1EEA0B6600F83A40 /* PostService.swift in Sources */,
 				C967A2601EE9C94D0028D7B3 /* CreateUsernameViewController.swift in Sources */,
 				C9648C411EEA54D2006D6FC1 /* PostHeaderCell.swift in Sources */,
 				C967A25A1EE9C3920028D7B3 /* LoginViewController.swift in Sources */,
+				C95A8ED71F097E91002E772C /* Chat.swift in Sources */,
+				C9B8A9DA1F097FFD0071781E /* ChatService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +538,14 @@
 				C97ECC851EEA4FA100F83A40 /* Base */,
 			);
 			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		C9B8A9DB1F09831F0071781E /* Chat.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9B8A9DC1F09831F0071781E /* Base */,
+			);
+			name = Chat.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
