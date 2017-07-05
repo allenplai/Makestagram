@@ -78,7 +78,6 @@ struct UserService {
             guard let user = User(snapshot: snapshot) else {
                 return completion(nil)
             }
-            
             completion(user)
         })
     }
@@ -195,12 +194,12 @@ struct UserService {
             for uid in followingDict.keys {
                 dispatchGroup.enter()
                 
-//                get (forUID: uid) { user in
-//                    if let user = user {
-//                        following.append(user)
-//                    }
-//                    dispatchGroup.leave()
-//                }
+                 show (forUID: uid) { user in
+                    if let user = user {
+                        following.append(user)
+                    }
+                    dispatchGroup.leave()
+                }
             }
             
             // 4
