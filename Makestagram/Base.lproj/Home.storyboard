@@ -162,7 +162,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Makestagram" id="CwR-Hq-XO3">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="7i5-7d-CJQ">
+                        <barButtonItem key="rightBarButtonItem" title="Chat" id="7i5-7d-CJQ">
                             <connections>
                                 <segue destination="ZUy-LF-Q4R" kind="presentation" id="cmT-hx-kqj"/>
                             </connections>
@@ -185,7 +185,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xwZ-Ew-otj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xwZ-Ew-otj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

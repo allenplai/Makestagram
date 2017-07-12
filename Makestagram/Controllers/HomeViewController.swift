@@ -116,10 +116,7 @@ extension HomeViewController: UITableViewDataSource {
                     self.tableView.reloadData()
                 }
             })
-            
-//            paginationHelper.paginate(completion: { (posts) in
-//                <#code#>
-//            })
+
         }
     }
 }

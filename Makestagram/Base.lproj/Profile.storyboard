@@ -161,7 +161,13 @@
                             <constraint firstAttribute="trailing" secondItem="45p-Hj-4Cx" secondAttribute="trailing" id="vgj-3B-8lL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8ew-xL-aD5"/>
+                    <navigationItem key="navigationItem" id="8ew-xL-aD5">
+                        <barButtonItem key="rightBarButtonItem" title="Find Friends" id="eHv-rw-rnu">
+                            <connections>
+                                <segue destination="bpc-XZ-HzF" kind="presentation" id="rPG-bt-gQB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="45p-Hj-4Cx" id="uh7-VV-VAK"/>
                     </connections>
@@ -169,6 +175,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSQ-eH-U79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="592.79999999999995" y="877.51124437781118"/>
+        </scene>
+        <!--FindFriends-->
+        <scene sceneID="Ala-0T-pZN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FindFriends" id="bpc-XZ-HzF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BiZ-NY-LXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099" y="837"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CMv-R3-US8">

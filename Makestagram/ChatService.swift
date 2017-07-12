@@ -81,6 +81,10 @@ struct ChatService {
                 else { return completion(nil) }
             
             completion(chat)
+          
+            
+            
+            
         })
     }
     
